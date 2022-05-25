@@ -9,6 +9,8 @@ do {
   if (!isNaN(userNum)) {
     nums.push(userNum);
     sum += userNum;
+  } else {
+    alert("Devi inserire un numero");
   }
 } while (sum < 50);
 
