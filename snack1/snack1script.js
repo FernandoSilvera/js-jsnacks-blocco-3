@@ -6,7 +6,10 @@ let sum = 0;
 do {
   const userNum = parseInt(prompt("Inserisci un numero"));
 
-  nums.push(userNum);
-
-  sum += userNum;
+  if (!isNaN(userNum)) {
+    nums.push(userNum);
+    sum += userNum;
+  }
 } while (sum < 50);
+
+console.log(nums);
